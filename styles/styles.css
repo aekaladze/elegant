@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  padding: 12px 56px;
+  transition: 0.16s;
+  background: #141718;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+.button:hover {
+  color: #141718;
+  background: #fff;
+}
+
+.favorite-btn {
+  color: #6c7275;
+  background: #fff;
+  border: none;
+  border-radius: 32px;
+  outline: none;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.1215686275);
+}
+
+.badge {
+  background: #fff;
+  color: #141718;
+  padding: 4px 14px;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  background: #141718;
+  font-family: "inter", sans-serif;
+}
+.discount p {
+  color: #fff;
+  size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.discount a {
+  font-family: "Inter", sans-serif;
+  color: #ffab00;
+  size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  border-bottom: 1px solid #ffab00;
+}
+.discount a i {
+  margin-left: 4px;
+}
+
+.nav {
+  padding: 16px 0;
+  background: rgba(255, 171, 0, 0.6392156863);
+}
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.nav ul li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.nav ul a {
+  color: #141718;
+}
+.nav .search {
+  color: #141718;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.hero {
+  position: relative;
+  background: url("../images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 820px;
+}
+.hero .content {
+  width: 538px;
+  position: absolute;
+  top: 222px;
+  left: 732px;
+}
+.hero .content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 84px;
+  letter-spacing: -3px;
+  margin-bottom: 8px;
+  color: #141718;
+}
+.hero .content span {
+  color: #377dff;
+}
+.hero .content p {
+  font-family: "Inter", sans-serif;
+  size: 20px;
+  line-height: 32px;
+  margin-bottom: 28px;
+  color: #141718;
+}
+
+.sponsors {
+  margin: 40px 0;
+}
+.sponsors .container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.new-arrivals {
+  padding: 48px 0;
+}
+.new-arrivals h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  color: #141718;
+  margin-bottom: 48px;
+}
+.new-arrivals .row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.new-arrivals img {
+  mix-blend-mode: multiply;
+}
+.new-arrivals .image {
+  position: relative;
+  transition: 0.16s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: #f3f5f7;
+  width: 262px;
+  height: 350px;
+}
+.new-arrivals .image .badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  transition: 0.16s;
+}
+.new-arrivals .image .favorite-btn {
+  opacity: 0;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.new-arrivals .image .button {
+  opacity: 0;
+  margin: 0 16px;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 9px 0;
+  transition: 0.16s;
+  margin-bottom: 16px;
+}
+.new-arrivals .image:hover .favorite-btn {
+  opacity: 1;
+}
+.new-arrivals .image:hover .button {
+  opacity: 1;
+}
+.new-arrivals .description {
+  margin-top: 12px;
+}
+.new-arrivals .description,
+.new-arrivals .product-name {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #141718;
+}
+.new-arrivals .price {
+  margin-top: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #141718;
+}
+
+.shop-collection {
+  padding: 48px 0;
+}
+.shop-collection h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  color: #141718;
+  padding-bottom: 48px;
+}
+.shop-collection img {
+  mix-blend-mode: multiply;
+}
+.shop-collection .small-image {
+  width: 50%;
+}
+.shop-collection .row {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+.shop-collection .row-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.shop-collection .card {
+  background: #f3f5f7;
+  width: 548px;
+}
+.shop-collection .card1 {
+  height: 664px;
+}
+.shop-collection .card2 {
+  height: 319px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.shop-collection h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.6px;
+  color: #141718;
+  margin-bottom: 12px;
+}
+.shop-collection .content {
+  margin: 48px;
+}
+.shop-collection a {
+  font-family: "Inter", sans-serif;
+  color: #ffab00;
+  size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  border-bottom: 1px solid #ffab00;
+  color: #141718;
+  border-color: #141718;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+.shop-collection a i {
+  margin-left: 4px;
+}
+
+.best-seller {
+  padding: 48px 0 100px;
+}
+.best-seller h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  color: #141718;
+  margin-bottom: 48px;
+}
+.best-seller .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 48px;
+}
+.best-seller img {
+  mix-blend-mode: multiply;
+}
+.best-seller .image {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f3f5f7;
+  width: 262px;
+  height: 350px;
+}
+.best-seller .image .badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.best-seller .stars {
+  margin-top: 12px;
+  display: flex;
+  gap: 2px;
+}
+.best-seller .description {
+  margin-top: 4px;
+}
+.best-seller .description,
+.best-seller .product-name {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #141718;
+}
+.best-seller .price {
+  margin-top: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #141718;
+}
+
+.promotion {
+  display: flex;
+}
+.promotion img {
+  flex: 1;
+}
+.promotion .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  background: rgba(255, 171, 0, 0.4);
+  padding-left: 72px;
+}
+.promotion .link {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #377dff;
+  margin-bottom: 16px;
+}
+.promotion h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  color: #141718;
+  margin-bottom: 16px;
+}
+.promotion p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #141718;
+  margin-bottom: 24px;
+}
+.promotion .button {
+  width: 154px;
+  padding: 6px 20px;
+}
+
+.values {
+  padding: 40px 0;
+}
+.values img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+.values .row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.values .card {
+  flex: 1;
+  background: #f3f5f7;
+  padding: 48px 32px;
+}
+.values h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #141718;
+  margin-bottom: 8px;
+}
+.values p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6c7275;
+}
+
+.join {
+  position: relative;
+  background-image: url("../images/background.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+.join img {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  mix-blend-mode: multiply;
+  transform: rotate(-20deg);
+  width: 330px;
+}
+.join .content {
+  padding-top: 101px;
+}
+.join h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  color: #141718;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.join p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #141718;
+}
+
+.footer {
+  background: #141718;
+  color: #fff;
+  padding: 80px 0 32px;
+}
+.footer .row,
+.footer .footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer .links {
+  margin-bottom: 57px;
+}
+.footer .logo {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+  color: #fff;
+  margin-right: 64px;
+}
+.footer .logo::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 24px;
+  background: #6c7275;
+  right: -32px;
+  top: 6px;
+}
+.footer .link {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #e8ecef;
+}
+.footer .footer-row {
+  border-top: 1px solid #6c7275;
+  padding-top: 16px;
+}
+.footer .copyright-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.footer .copyright-row a {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #fff;
+}
+.footer .copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #e8ecef;
+}
+.footer .social-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer .social {
+  width: 24px;
+  height: 24px;
+}
+
+.container {
+  width: 1120px;
+  margin: 0 auto;
+}/*# sourceMappingURL=styles.css.map */

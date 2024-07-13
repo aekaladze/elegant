@@ -1,0 +1,33 @@
+.values {
+  padding: 40px 0;
+
+  img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .card {
+    flex: 1;
+    background: $grayBg;
+    padding: 48px 32px;
+  }
+
+  h5 {
+    @include headline5;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: $grayText;
+  }
+}

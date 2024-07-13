@@ -1,0 +1,94 @@
+$transition: 0.16s;
+
+.button {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  padding: 12px 56px;
+  transition: $transition;
+
+  background: $blackBg;
+  color: $white;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+
+  &:hover {
+    color: $blackBg;
+    background: $white;
+  }
+}
+
+.favorite-btn {
+  color: $grayText;
+  background: $white;
+  border: none;
+  border-radius: 32px;
+  outline: none;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  box-shadow: 0px 8px 16px -8px #0f0f0f1f;
+}
+
+.badge {
+  background: $white;
+  color: $blackBg;
+  padding: 4px 14px;
+  border-radius: 4px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+@mixin logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $black;
+}
+
+@mixin headline2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  color: $blackBg;
+}
+
+@mixin headline3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.6px;
+  color: $blackBg;
+}
+
+@mixin headline5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: $blackBg;
+}
+
+@mixin link {
+  font-family: "Inter", sans-serif;
+  color: $orange;
+  size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  border-bottom: 1px solid $orange;
+
+  i {
+    margin-left: 4px;
+  }
+}

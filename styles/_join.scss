@@ -1,0 +1,36 @@
+.join {
+  position: relative;
+  background-image: url("../images/background.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
+
+  img {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    mix-blend-mode: multiply;
+    transform: rotate(-20deg);
+    width: 330px;
+  }
+
+  .content {
+    padding-top: 101px;
+  }
+
+  h2 {
+    @include headline2;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: $blackBg;
+  }
+}

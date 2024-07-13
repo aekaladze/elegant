@@ -1,0 +1,66 @@
+.best-seller {
+  padding: 48px 0 100px;
+
+  h2 {
+    @include headline2;
+    margin-bottom: 48px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  img {
+    mix-blend-mode: multiply;
+  }
+
+  .image {
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $grayBg;
+    width: 262px;
+    height: 350px;
+
+    .badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+  }
+
+  .stars {
+    margin-top: 12px;
+    display: flex;
+    gap: 2px;
+  }
+
+  .description {
+    margin-top: 4px;
+  }
+
+  .description,
+  .product-name {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $blackBg;
+  }
+
+  .price {
+    margin-top: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $blackBg;
+  }
+}

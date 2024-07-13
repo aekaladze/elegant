@@ -1,0 +1,21 @@
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 0;
+  background: $blackBg;
+  font-family: "inter", sans-serif;
+
+  p {
+    color: $white;
+    size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  a {
+    @include link;
+  }
+}

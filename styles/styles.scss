@@ -1,0 +1,19 @@
+@import "./reset";
+@import "./colors";
+@import "./variables";
+@import "./discount";
+@import "./nav";
+@import "./hero";
+@import "./sponsors";
+@import "./newArrivals";
+@import "./shopCollection";
+@import "./bestSeller";
+@import "./promotion";
+@import "./values";
+@import "./join";
+@import "./footer";
+
+.container {
+  width: 1120px;
+  margin: 0 auto;
+}

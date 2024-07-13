@@ -1,0 +1,81 @@
+.footer {
+  background: $blackBg;
+  color: $white;
+  padding: 80px 0 32px;
+
+  .row,
+  .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .links {
+    margin-bottom: 57px;
+  }
+
+  .logo {
+    position: relative;
+    @include logo;
+    color: $white;
+    margin-right: 64px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 24px;
+      background: $grayText;
+      right: -32px;
+      top: 6px;
+    }
+  }
+
+  .link {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $whiteText;
+  }
+
+  .footer-row {
+    border-top: 1px solid $grayText;
+    padding-top: 16px;
+  }
+
+  .copyright-row {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    a {
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: left;
+      color: $white;
+    }
+  }
+
+  .copyright {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $whiteText;
+  }
+
+  .social-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .social {
+    width: 24px;
+    height: 24px;
+  }
+}
